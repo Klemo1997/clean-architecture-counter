@@ -1,4 +1,4 @@
-import {create, decrement} from "./counterModel";
+import {create, decrement, increment} from "./counterModel";
 
 describe('create', () => {
     it('creates counter with given value', () => {
@@ -35,5 +35,27 @@ describe('decrement', () => {
         const counter = create(0)
 
         expect(decrement(counter).value).toBe(0)
+    });
+})
+
+describe('increment', () => {
+    it('does not mutate counter instance', () => {
+        const counter = create(1)
+
+        increment(counter)
+
+        expect(counter.value).toBe(1)
+    });
+
+    it('increases value of counter by 1', () => {
+        const counter = create(1)
+
+        expect(increment(counter).value).toBe(2)
+    });
+
+    it('decreases another value by 1', () => {
+        const counter = create(5)
+
+        expect(increment(counter).value).toBe(6)
     });
 })
