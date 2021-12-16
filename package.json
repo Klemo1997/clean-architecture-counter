@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Klemo1997/clean-architecture-counter/issues"
   },
-  "homepage": "https://github.com/Klemo1997/clean-architecture-counter#readme"
+  "homepage": "https://github.com/Klemo1997/clean-architecture-counter#readme",
+  "dependencies": {
+    "typescript": "^4.5.4"
+  }
 }
