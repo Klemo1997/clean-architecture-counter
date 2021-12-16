@@ -1,0 +1,24 @@
+{
+  "name": "clean-architecture-counter",
+  "version": "1.0.0",
+  "description": "Implementation of counter UI using CLEAN architecture",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klemo1997/clean-architecture-counter.git"
+  },
+  "keywords": [
+    "clean",
+    "architecture",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Klemo1997/clean-architecture-counter/issues"
+  },
+  "homepage": "https://github.com/Klemo1997/clean-architecture-counter#readme"
+}
