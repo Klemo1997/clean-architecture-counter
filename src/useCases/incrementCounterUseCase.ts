@@ -4,14 +4,13 @@ import {increment} from "../domain/counterModel";
 type IncrementCounterStore = Pick<CounterStore, 'counter' | 'setCounter' | 'updateCounter'>
 
 const incrementCounterUseCase = (store: IncrementCounterStore) => {
-    const updatedCounter = store.counter
-        ? increment(store.counter)
-        : store.counter
-
-    if (updatedCounter) {
-        store.setCounter(updatedCounter)
-        store.updateCounter(updatedCounter)
+    if (!store.counter) {
+        return;
     }
+    const updatedCounter = increment(store.counter)
+
+    store.setCounter(updatedCounter)
+    store.updateCounter(updatedCounter)
 }
 
 export { incrementCounterUseCase }
