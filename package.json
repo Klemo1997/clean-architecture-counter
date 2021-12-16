@@ -23,5 +23,12 @@
   "homepage": "https://github.com/Klemo1997/clean-architecture-counter#readme",
   "dependencies": {
     "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5",
+    "@types/jest": "^27.0.3",
+    "ts-node": "^10.4.0",
+    "esbuild": "^0.14.5",
+    "esbuild-runner": "^2.2.1"
   }
 }
