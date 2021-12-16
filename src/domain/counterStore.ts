@@ -1,6 +1,6 @@
 import type {Counter} from './counterEntity'
 
-interface CounterStore {
+export interface CounterStore {
     // State
     counter: Optional<Counter>
     isLoading: boolean
