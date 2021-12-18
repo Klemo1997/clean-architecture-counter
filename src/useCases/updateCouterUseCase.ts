@@ -10,7 +10,6 @@ const updateCounterUseCase = (store: UpdateCounterStore, updater: CounterUpdater
     if (!store.counter) {
         return;
     }
-
     const updatedCounter = updater(store.counter)
 
     store.setCounter(updatedCounter)
@@ -18,3 +17,4 @@ const updateCounterUseCase = (store: UpdateCounterStore, updater: CounterUpdater
 }
 
 export { updateCounterUseCase }
+export type { UpdateCounterStore }

@@ -1,10 +1,7 @@
-import type {CounterStore} from "../domain/counterStore";
-import {increment} from "../domain/counterModel";
-import {updateCounterUseCase} from "./updateCouterUseCase";
+import { increment } from "../domain/counterModel";
+import { UpdateCounterStore, updateCounterUseCase } from "./updateCouterUseCase";
 
-type IncrementCounterStore = Pick<CounterStore, 'counter' | 'setCounter' | 'updateCounter'>
-
-const incrementCounterUseCase = (store: IncrementCounterStore) =>
+const incrementCounterUseCase = (store: UpdateCounterStore) =>
     updateCounterUseCase(store, increment)
 
 export { incrementCounterUseCase }
